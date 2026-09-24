@@ -4,7 +4,7 @@
 
 - **LLM agents:** measured where the tokens go in 641 real Claude Code sessions (134k API calls) and shipped the hooks that act on it. Three prompt-cache reports filed upstream in [anthropics/claude-code](https://github.com/anthropics/claude-code/issues?q=author%3Aedubraqd).
 - **Quantum:** 4 PRs in review across [Qiskit](https://github.com/Qiskit/qiskit), [Qiskit Aer](https://github.com/Qiskit/qiskit-aer) and [Qiskit Nature](https://github.com/qiskit-community/qiskit-nature): overflow in the Rust core, a transpiler pass, simulator gate semantics, Hamiltonian sign conventions.
-- **Upstream record:** fixes merged in [DataFusion](https://github.com/apache/datafusion/pull/24916), [Qdrant](https://github.com/qdrant/qdrant/pull/10448) and [CHT Core](https://github.com/medic/cht-core/pull/11439). 22 bugs filed, each with a reproduction; every fix ships with its test.
+- **Upstream record:** fixes merged in [DataFusion](https://github.com/apache/datafusion/pull/24916), [Qdrant](https://github.com/qdrant/qdrant/pull/10448), [CHT Core](https://github.com/medic/cht-core/pull/11439) and [IPED](https://github.com/sepinf-inc/IPED/pulls?q=is%3Amerged+author%3Aedubraqd). 22 bugs filed, each with a reproduction; every fix ships with its test.
 
 **Looking for:** remote roles in LLM/agent infrastructure, evals and retrieval, or quantum software tooling. UTC−3: full overlap with US Eastern, 4–5 h with Pacific. English and Portuguese, working Spanish.
 **Contact:** [eduardoalcantara.sp@gmail.com](mailto:eduardoalcantara.sp@gmail.com)
@@ -45,9 +45,9 @@ All four are in review. Each one started as a failing reproduction.
 | [apache/datafusion](https://github.com/apache/datafusion) | [#24916](https://github.com/apache/datafusion/pull/24916) `RANGE` window frames over `Duration`/`Interval` | [13 issues](https://github.com/apache/datafusion/issues?q=author%3Aedubraqd): decimal overflow with negative scale, panics in `COPY … PARTITIONED BY`, `approx_percentile_cont` |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | [#10448](https://github.com/qdrant/qdrant/pull/10448) `Bits1_5` in the TurboQuant test matrices | |
 | [medic/cht-core](https://github.com/medic/cht-core) | [#11439](https://github.com/medic/cht-core/pull/11439) task filter broke under Nepali digits | |
+| [sepinf-inc/IPED](https://github.com/sepinf-inc/IPED) | [#2975](https://github.com/sepinf-inc/IPED/pull/2975) [#2976](https://github.com/sepinf-inc/IPED/pull/2976) OCR parser: keep the document when tesseract rejects a page; drop Tesseract 3 | |
 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | | [#14069](https://github.com/juspay/hyperswitch/pull/14069) [#14070](https://github.com/juspay/hyperswitch/pull/14070) [#14071](https://github.com/juspay/hyperswitch/pull/14071) panics and overflow in `common_utils` |
 | [apache/arrow-rs](https://github.com/apache/arrow-rs) | | [2 issues](https://github.com/apache/arrow-rs/issues?q=author%3Aedubraqd): decimal precision/scale overflow |
-| [sepinf-inc/IPED](https://github.com/sepinf-inc/IPED) | | [#2975](https://github.com/sepinf-inc/IPED/pull/2975) [#2976](https://github.com/sepinf-inc/IPED/pull/2976) OCR parser, approved |
 
 <details>
 <summary><b>Products and day job</b></summary>
