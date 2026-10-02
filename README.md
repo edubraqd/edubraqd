@@ -1,10 +1,14 @@
-# Eduardo Alcantara
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/hero-light.svg">
+  <img alt="Eduardo Alcantara, LLM-agent infrastructure and quantum software. Merged upstream: qdrant/qdrant#10448, Stellarium/stellarium#5133, apache/datafusion#24916, sepinf-inc/IPED#2975 and #2976, medic/cht-core#11439, unicef/adt-studio#876." src="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/hero-light.svg">
+</picture>
 
 **I build and measure infrastructure for LLM agents, and fix bugs in quantum software.** Python and Rust. São Paulo, open to remote.
 
 - **LLM agents:** measured where the tokens go in 641 real Claude Code sessions (134k API calls) and shipped the hooks that act on it. Three prompt-cache reports filed upstream in [anthropics/claude-code](https://github.com/anthropics/claude-code/issues?q=author%3Aedubraqd).
 - **Quantum:** 4 PRs in review across [Qiskit](https://github.com/Qiskit/qiskit), [Qiskit Aer](https://github.com/Qiskit/qiskit-aer) and [Qiskit Nature](https://github.com/qiskit-community/qiskit-nature): overflow in the Rust core, a transpiler pass, simulator gate semantics, Hamiltonian sign conventions.
-- **Upstream record:** fixes merged in [DataFusion](https://github.com/apache/datafusion/pull/24916), [Qdrant](https://github.com/qdrant/qdrant/pull/10448), [CHT Core](https://github.com/medic/cht-core/pull/11439) and [IPED](https://github.com/sepinf-inc/IPED/pulls?q=is%3Amerged+author%3Aedubraqd). 22 bugs filed, each with a reproduction; every fix ships with its test.
+- **Upstream record:** 7 PRs merged in [Qdrant](https://github.com/qdrant/qdrant/pull/10448), [Stellarium](https://github.com/Stellarium/stellarium/pull/5133), [DataFusion](https://github.com/apache/datafusion/pull/24916), [IPED](https://github.com/sepinf-inc/IPED/pulls?q=is%3Amerged+author%3Aedubraqd), [CHT Core](https://github.com/medic/cht-core/pull/11439) and UNICEF's [ADT Studio](https://github.com/unicef/adt-studio/pull/876). 22 bugs filed, each with a reproduction.
 
 **Looking for:** remote roles in LLM/agent infrastructure, evals and retrieval, or quantum software tooling. UTC−3: full overlap with US Eastern, 4–5 h with Pacific. English and Portuguese, working Spanish.
 **Contact:** [eduardoalcantara.sp@gmail.com](mailto:eduardoalcantara.sp@gmail.com)
@@ -17,6 +21,12 @@
 Forensics on **641 Claude Code sessions / 134k API calls**. Cache reads are ~62% of the bill. 80% of cache *writes* come from a handful of full re-writes; an idle gap past the 1-hour TTL breaks the cache 93–97% of the time. Ships the measurement tools and four hooks built on the findings (context guard, batch eviction, handoff, canary). CI on Linux and Windows, Python 3.8 and 3.12.
 Upstream: [#94177](https://github.com/anthropics/claude-code/issues/94177) cache forensics with mitigations from the literature · [#94417](https://github.com/anthropics/claude-code/issues/94417) memory block never shared across sessions · [#95694](https://github.com/anthropics/claude-code/issues/95694) unreachable cold-compact path.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/ttl-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/ttl-light.svg">
+  <img alt="The one-hour cliff: share of calls that re-wrote the whole cached history, by idle gap before the call, 641 sessions. 0-2 min 1%, 2-5 min 4%, 5-10 min 7%, 10-20 min 7%, 20-30 min 13%, 30-45 min 17%, 45-60 min 20%, 60-90 min 97%, 90-180 min 97%, over 180 min 93%." src="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/ttl-light.svg">
+</picture>
+
 `Python` `prompt caching` `agent hooks` `measurement`
 
 ### [arquimedesbr](https://github.com/edubraqd/arquimedesbr) — a library an agent can actually cite
@@ -25,9 +35,15 @@ Upstream: [#94177](https://github.com/anthropics/claude-code/issues/94177) cache
 `Python` `BM25` `embeddings` `rerankers` `evals` `MCP`
 
 ### Evals
-[caveman#1044](https://github.com/JuliusBrussee/caveman/pull/1044) (106k ⭐): isolated eval runs from local config, per-language prompts, pt-BR snapshot. Measured −8% output tokens in Portuguese.
+[caveman#1044](https://github.com/JuliusBrussee/caveman/pull/1044) (109k ⭐): isolated eval runs from local config, per-language prompts, pt-BR snapshot. Measured −8% output tokens in Portuguese.
 
 ## Quantum software
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/cswap-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/cswap-light.svg">
+  <img alt="qiskit-aer#2463: an open-controlled SWAP. On main the X gates that implement the open control also hit target qubit a and the reproducer gives |sv[0]| = 0.5; with the fix they act on the control only and it gives 1.0." src="https://raw.githubusercontent.com/edubraqd/edubraqd/main/assets/cswap-light.svg">
+</picture>
 
 | PR | What was wrong |
 | --- | --- |
@@ -46,6 +62,8 @@ All four are in review. Each one started as a failing reproduction.
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | [#10448](https://github.com/qdrant/qdrant/pull/10448) `Bits1_5` in the TurboQuant test matrices | |
 | [medic/cht-core](https://github.com/medic/cht-core) | [#11439](https://github.com/medic/cht-core/pull/11439) task filter broke under Nepali digits | |
 | [sepinf-inc/IPED](https://github.com/sepinf-inc/IPED) | [#2975](https://github.com/sepinf-inc/IPED/pull/2975) [#2976](https://github.com/sepinf-inc/IPED/pull/2976) OCR parser: keep the document when tesseract rejects a page; drop Tesseract 3 | |
+| [Stellarium/stellarium](https://github.com/Stellarium/stellarium) | [#5133](https://github.com/Stellarium/stellarium/pull/5133) AppImage: `QTWEBENGINEPROCESS_PATH` held two paths joined by `:`, so Online Queries aborted; one path per recipe | |
+| [unicef/adt-studio](https://github.com/unicef/adt-studio) | [#876](https://github.com/unicef/adt-studio/pull/876) CLI drew a skipped stage as a full `100/100` bar | |
 | [juspay/hyperswitch](https://github.com/juspay/hyperswitch) | | [#14069](https://github.com/juspay/hyperswitch/pull/14069) [#14070](https://github.com/juspay/hyperswitch/pull/14070) [#14071](https://github.com/juspay/hyperswitch/pull/14071) panics and overflow in `common_utils` |
 | [apache/arrow-rs](https://github.com/apache/arrow-rs) | | [2 issues](https://github.com/apache/arrow-rs/issues?q=author%3Aedubraqd): decimal precision/scale overflow |
 
@@ -59,3 +77,9 @@ All four are in review. Each one started as a failing reproduction.
 </details>
 
 **Stack:** Python · Rust · TypeScript · SQL — Qiskit · Claude Code / MCP · BM25, embeddings, rerankers · PostgreSQL · Docker · GitHub Actions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/edubraqd/edubraqd/output/github-contribution-grid-snake.svg">
+  <img alt="Contribution graph eaten by a snake, regenerated daily" src="https://raw.githubusercontent.com/edubraqd/edubraqd/output/github-contribution-grid-snake.svg">
+</picture>

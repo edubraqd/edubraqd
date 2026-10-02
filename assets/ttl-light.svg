@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="284" viewBox="0 0 880 284" role="img" aria-labelledby="t">
+<title id="t">The one-hour cliff: share of Claude Code calls that re-wrote the whole cached history, by idle gap. 0–2 min 1%, 2–5 min 4%, 5–10 min 7%, 10–20 min 7%, 20–30 min 13%, 30–45 min 17%, 45–60 min 20%, 60–90 min 97%, 90–180 min 97%, &gt;180 min 93%.</title>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+@keyframes grow{0%{transform:scaleY(0);animation-timing-function:cubic-bezier(.2,.7,.2,1)}9%{transform:scaleY(1)}92%{transform:scaleY(1);opacity:1}97%{transform:scaleY(1);opacity:0}100%{transform:scaleY(0);opacity:0}}@keyframes growc{0%{transform:scaleY(0);animation-timing-function:cubic-bezier(.3,1.5,.55,1)}9%{transform:scaleY(1)}92%{transform:scaleY(1);opacity:1}97%{transform:scaleY(1);opacity:0}100%{transform:scaleY(0);opacity:0}}.bar{animation:grow 14s infinite backwards}.barc{animation:growc 14s infinite backwards}
+@keyframes lab{0%,8%{opacity:0}12%,92%{opacity:1}97%,100%{opacity:0}}.lab{animation:lab 14s linear infinite backwards}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".5" y=".5" width="879" height="283" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+<text x="24" y="38" font-size="16" font-weight="600" fill="#1f2328">The one-hour cliff</text>
+<text x="24" y="60" font-size="13" fill="#59636e">Calls that re-wrote the whole cached history, by idle gap before the call · 641 Claude Code sessions</text>
+<path d="M72 228.0H856" stroke="#d1d9e0"/>
+<text class="mono" x="62" y="232.0" text-anchor="end" font-size="11" fill="#59636e">0</text>
+<path d="M72 164.0H856" stroke="#eaeef2"/>
+<text class="mono" x="62" y="168.0" text-anchor="end" font-size="11" fill="#59636e">50</text>
+<path d="M72 100.0H856" stroke="#eaeef2"/>
+<text class="mono" x="62" y="104.0" text-anchor="end" font-size="11" fill="#59636e">100%</text>
+<g transform="translate(89.20 228)"><path class="bar" d="M0 0V0.00Q0 -1.28 1.28 -1.28H42.72Q44 -1.28 44 0.00V0Z" fill="#818b98" style="animation-delay:0.00s"/></g>
+<text class="mono" x="111.20" y="246" text-anchor="middle" font-size="11" fill="#59636e">0–2</text>
+<g transform="translate(167.60 228)"><path class="bar" d="M0 0V-1.12Q0 -5.12 4.00 -5.12H40.00Q44 -5.12 44 -1.12V0Z" fill="#818b98" style="animation-delay:0.15s"/></g>
+<text class="mono" x="189.60" y="246" text-anchor="middle" font-size="11" fill="#59636e">2–5</text>
+<g transform="translate(246.00 228)"><path class="bar" d="M0 0V-4.96Q0 -8.96 4.00 -8.96H40.00Q44 -8.96 44 -4.96V0Z" fill="#818b98" style="animation-delay:0.30s"/></g>
+<text class="mono" x="268.00" y="246" text-anchor="middle" font-size="11" fill="#59636e">5–10</text>
+<g transform="translate(324.40 228)"><path class="bar" d="M0 0V-4.96Q0 -8.96 4.00 -8.96H40.00Q44 -8.96 44 -4.96V0Z" fill="#818b98" style="animation-delay:0.45s"/></g>
+<text class="mono" x="346.40" y="246" text-anchor="middle" font-size="11" fill="#59636e">10–20</text>
+<g transform="translate(402.80 228)"><path class="bar" d="M0 0V-12.64Q0 -16.64 4.00 -16.64H40.00Q44 -16.64 44 -12.64V0Z" fill="#818b98" style="animation-delay:0.60s"/></g>
+<text class="mono" x="424.80" y="246" text-anchor="middle" font-size="11" fill="#59636e">20–30</text>
+<g transform="translate(481.20 228)"><path class="bar" d="M0 0V-17.76Q0 -21.76 4.00 -21.76H40.00Q44 -21.76 44 -17.76V0Z" fill="#818b98" style="animation-delay:0.75s"/></g>
+<text class="mono" x="503.20" y="246" text-anchor="middle" font-size="11" fill="#59636e">30–45</text>
+<g transform="translate(559.60 228)"><path class="bar" d="M0 0V-21.60Q0 -25.60 4.00 -25.60H40.00Q44 -25.60 44 -21.60V0Z" fill="#818b98" style="animation-delay:0.90s"/></g>
+<text class="mono" x="581.60" y="246" text-anchor="middle" font-size="11" fill="#59636e">45–60</text>
+<g transform="translate(638.00 228)"><path class="barc" d="M0 0V-120.16Q0 -124.16 4.00 -124.16H40.00Q44 -124.16 44 -120.16V0Z" fill="#d1242f" style="animation-delay:1.05s"/></g>
+<text class="mono" x="660.00" y="246" text-anchor="middle" font-size="11" fill="#59636e">60–90</text>
+<g transform="translate(716.40 228)"><path class="barc" d="M0 0V-120.16Q0 -124.16 4.00 -124.16H40.00Q44 -124.16 44 -120.16V0Z" fill="#d1242f" style="animation-delay:1.20s"/></g>
+<text class="mono" x="738.40" y="246" text-anchor="middle" font-size="11" fill="#59636e">90–180</text>
+<g transform="translate(794.80 228)"><path class="barc" d="M0 0V-115.04Q0 -119.04 4.00 -119.04H40.00Q44 -119.04 44 -115.04V0Z" fill="#d1242f" style="animation-delay:1.35s"/></g>
+<text class="mono" x="816.80" y="246" text-anchor="middle" font-size="11" fill="#59636e">&gt;180</text>
+<text class="mono lab" x="111.20" y="219.72" text-anchor="middle" font-size="12" fill="#1f2328" style="animation-delay:0.00s">1%</text>
+<text class="mono lab" x="581.60" y="195.40" text-anchor="middle" font-size="12" fill="#1f2328" style="animation-delay:0.90s">20%</text>
+<text class="mono lab" x="660.00" y="96.84" text-anchor="middle" font-size="12" fill="#1f2328" style="animation-delay:1.05s">97%</text>
+<text class="mono lab" x="816.80" y="101.96" text-anchor="middle" font-size="12" fill="#1f2328" style="animation-delay:1.35s">93%</text>
+<g class="lab" style="animation-delay:1.05s"><path d="M620.80 86V228" stroke="#1f2328" stroke-dasharray="3 3"/><text class="mono" x="612.80" y="98" text-anchor="end" font-size="12" fill="#1f2328">1 h cache TTL</text></g>
+<text x="72" y="270" font-size="12" fill="#59636e">idle gap before the call, minutes</text>
+</svg>

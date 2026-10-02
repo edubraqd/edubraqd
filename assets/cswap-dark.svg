@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="192" viewBox="0 0 880 192" role="img" aria-labelledby="t">
+<title id="t">qiskit-aer#2463: an open-controlled SWAP. Before the fix the X gates implementing the open control also hit target qubit a and |sv[0]| was 0.5; after it they act on the control only and |sv[0]| is 1.0.</title>
+<style>
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+@keyframes pulse{0%{opacity:0;transform:translateX(0)}4%{opacity:1}36%{opacity:1;transform:translateX(540px)}40%{opacity:0;transform:translateX(540px)}50%{opacity:0;transform:translateX(0)}54%{opacity:1}86%{opacity:1;transform:translateX(540px)}90%,100%{opacity:0;transform:translateX(540px)}}.pulse{animation:pulse 8s linear infinite}
+@keyframes bug{0%,44%{opacity:1;transform:scale(1)}50%,94%{opacity:0;transform:scale(.4)}100%{opacity:1;transform:scale(1)}}.bug{animation:bug 8s ease-in-out infinite}
+@keyframes stmain{0%,44%{opacity:1}50%,94%{opacity:0}100%{opacity:1}}@keyframes stfix{0%,44%{opacity:0}50%,94%{opacity:1}100%{opacity:0}}.stmain{animation:stmain 8s ease-in-out infinite}.stfix{animation:stfix 8s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x=".5" y=".5" width="879" height="191" rx="12" fill="#0d1117" stroke="#3d444d"/>
+<text x="24" y="34" font-size="13" fill="#9198a1"><tspan class="mono" fill="#4493f8">qiskit-aer#2463</tspan>  open-controlled SWAP, as the Python assembler emitted it · in review</text>
+<text class="mono" x="44" y="83" text-anchor="end" font-size="14" fill="#9198a1">c</text>
+<path d="M56 78H596" stroke="#9198a1" stroke-width="1.2"/>
+<text class="mono" x="44" y="123" text-anchor="end" font-size="14" fill="#9198a1">a</text>
+<path d="M56 118H596" stroke="#9198a1" stroke-width="1.2"/>
+<text class="mono" x="44" y="163" text-anchor="end" font-size="14" fill="#9198a1">b</text>
+<path d="M56 158H596" stroke="#9198a1" stroke-width="1.2"/>
+<circle class="pulse" cx="56" cy="78" r="3.5" fill="#4493f8" style="opacity:0"/>
+<circle class="pulse" cx="56" cy="118" r="3.5" fill="#4493f8" style="opacity:0"/>
+<circle class="pulse" cx="56" cy="158" r="3.5" fill="#4493f8" style="opacity:0"/>
+<rect x="175" y="63" width="30" height="30" rx="5" fill="#0d1117" stroke="#f0f6fc" stroke-width="1.5"/><text class="mono" x="190" y="83" text-anchor="middle" font-size="15" fill="#f0f6fc">X</text>
+<g transform="translate(190 118)"><g class="bug" style="opacity:0"><rect x="-15" y="-15" width="30" height="30" rx="5" fill="#0d1117" stroke="#f85149" stroke-width="1.5"/><text class="mono" x="0" y="5" text-anchor="middle" font-size="15" fill="#f85149">X</text></g></g>
+<rect x="445" y="63" width="30" height="30" rx="5" fill="#0d1117" stroke="#f0f6fc" stroke-width="1.5"/><text class="mono" x="460" y="83" text-anchor="middle" font-size="15" fill="#f0f6fc">X</text>
+<g transform="translate(460 118)"><g class="bug" style="opacity:0"><rect x="-15" y="-15" width="30" height="30" rx="5" fill="#0d1117" stroke="#f85149" stroke-width="1.5"/><text class="mono" x="0" y="5" text-anchor="middle" font-size="15" fill="#f85149">X</text></g></g>
+<path d="M325 85V158" stroke="#f0f6fc" stroke-width="2"/>
+<circle cx="325" cy="78" r="7" fill="#0d1117" stroke="#f0f6fc" stroke-width="2"/>
+<path d="M319 112l12 12m0-12l-12 12" stroke="#f0f6fc" stroke-width="2"/>
+<path d="M319 152l12 12m0-12l-12 12" stroke="#f0f6fc" stroke-width="2"/>
+<path d="M612 56V172" stroke="#262c36"/>
+<g class="stmain" style="opacity:0"><rect x="636" y="58" width="64" height="22" rx="11" fill="none" stroke="#f85149"/><text class="mono" x="668" y="73.5" text-anchor="middle" font-size="12" fill="#f85149">✗ main</text><text x="636" y="108" font-size="14" fill="#f0f6fc">X also hits target a</text><text class="mono" x="636" y="140" font-size="22" fill="#f0f6fc">|sv[0]| = 0.5</text><text x="636" y="162" font-size="12" fill="#9198a1">issue reproducer: statevector, unitary, MPS</text></g>
+<g class="stfix" style="opacity:1"><rect x="636" y="58" width="64" height="22" rx="11" fill="none" stroke="#3fb950"/><text class="mono" x="668" y="73.5" text-anchor="middle" font-size="12" fill="#3fb950">✓ fix</text><text x="636" y="108" font-size="14" fill="#f0f6fc">X only on the control</text><text class="mono" x="636" y="140" font-size="22" fill="#f0f6fc">|sv[0]| = 1.0</text><text x="636" y="162" font-size="12" fill="#9198a1">issue reproducer: statevector, unitary, MPS</text></g>
+</svg>
